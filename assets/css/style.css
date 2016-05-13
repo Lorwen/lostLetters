@@ -1,0 +1,152 @@
+header
+{
+	border-top: 2px #858c99 solid;
+	border-left: 2px #858c99 solid;
+	border-right: 2px #858c99 solid;
+	background: #defaff;
+	background-size: auto;
+	text-align: center;
+	box-shadow: 3px 3px 3px #858c99;
+}
+nav.navbar a:hover
+{
+	background: #007FFF;
+	transition: background-color 1s;
+	color: white;
+	border-radius: 5px;
+}
+nav form
+{
+	color: #858c99;
+	margin-left: 80%;
+}
+#signin
+{
+	display: none;
+}
+.preview
+{
+	margin: 15px;
+	padding: 5px;
+	border-style: solid;
+	border-radius: 15px;
+	position: relative;
+	background-color: #a6a6a6;
+}
+.link_article
+{
+	height: 25px;
+	right: 5px;
+	position: absolute;
+	background: #760001;
+	border: 2px solid #760001;
+	border-radius: 10px;
+}
+.link_article a
+{
+		color: white;
+		font-size: 1.2em;
+		text-decoration: none;
+		text-align:center;
+}
+.link_article a:hover
+{
+		color: gold;
+		font-size: 1.2em;
+		text-decoration: none;
+		text-align:center;
+}
+lu
+{
+	display: flex;
+}
+li a
+{
+	text-decoration: none;
+	color: #858c99;
+}
+ul li #preview
+{
+	border:2px, solid, black;
+}
+.row aside,.row  article
+{
+	padding:15px 30px;
+}
+aside{
+	background: gray;
+}
+section
+{
+	display: flex;
+	height: 85%;
+}
+.comment
+{
+	border: 1px solid black;
+	background-color: white;
+	color: black;
+	margin: 0.5em;
+	padding: 0.2em;
+	width: auto;
+}
+.cadre
+{
+	border: 1px solid black;
+	background-color: #858c99;
+	color: white;
+	margin-left:0.2em;
+	padding:0.1em;
+}
+.writing
+{
+	margin-left:5px;
+}
+aside:nth-child(1)
+{
+	order:2;
+	flex: 1;
+	width: 15%;
+	border: 2px #858c99 solid;
+	border-radius: 5px;
+	padding: 8px;
+	display: flex;
+	flex-direction: column;
+	background: #858c99;
+
+}
+article:nth-child(2)
+{
+	order:1;
+	flex: 4;
+	margin-left: 5%;
+	margin-top: 5%;
+	padding: 8px;
+}
+footer
+{
+	border: 2px #858c99 solid;
+	background: #defaff;
+	text-align: center;
+	height: 100%;
+	box-shadow: 3px 3px 3px #858c99;
+	height: 3em;
+}
+footer a
+{
+	text-align: center;
+	text-decoration: none;
+	color: #858c99;
+	bottom: 0;
+}
+.error
+{
+	color: red;
+	text-align: center;
+	size:2.5em;
+}
+.hvr-shutter-out-vertical {
+		border-radius: 5px;
+    background-color: #defaff;
+    text-decoration: none;
+}
