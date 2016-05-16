@@ -1,6 +1,7 @@
 <?php
 // Connexion à la BDD
-$dbh = new PDO('mysql:host=localhost;dbname=les lettres perdues', 'root', '');
+$ini_array =  parse_ini_file("../config.ini");
+$dbh = new PDO('mysql:host=localhost;dbname=les lettres perdues;charset=utf8',$ini_array['login'],$ini_array['pwd']);
 
 // Renvoie la liste des aticles sélectionnés
 function getArticles()
