@@ -1,14 +1,13 @@
 <?php
+// Démarrer la session
 session_start();
-
 // Inclusion des fonctions du modèle
 include_once('../models/DatabaseConnection.php');
 include_once('../models/getArticles.php');
 
-if(!empty($_POST['bouton']))
-{
-  var_dump($comparaison);
-} 
+// Inclusion du menu de navigation
+include_once('c-nav.php');
+    //var_dump($_SESSION)
 // Sélectionner les articles
 $articles = getArticles();
 

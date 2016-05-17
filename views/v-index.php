@@ -1,7 +1,7 @@
 <?php $title = 'Accueil'; ?>
 
 <?php ob_start(); ?>
-  <div //id="contenu">
+  <div id="contenu">
 
 				<h2>Articles récents </h2>
 					<!-- parcours des résultats -->
@@ -27,7 +27,7 @@
 						</li>
           <?php endforeach; ?>
 				</ul>
-		
+
     </div> <!--#contenu -->
 <?php  $contenu = ob_get_clean(); ?>
 

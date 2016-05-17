@@ -5,11 +5,8 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand hvr-shutter-out-vertical" href="index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+          <a class="navbar-brand hvr-shutter-out-vertical" href="c-index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -34,8 +31,8 @@
           </ul>
           <?php else : ?>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="edition.php" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
-            <li class="active"><a href="index.php?logout"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="c-edition.php" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
+            <li class="active"><a href="logout.php"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
           </ul>
           <?php endif; ?>
           <form class="navbar-form navbar-right" role="search">
