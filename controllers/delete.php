@@ -1,4 +1,5 @@
 <?php
+// Démarrer la session
 session_start();
 // Inclusion des fonctions du modèle
 include_once('../models/DatabaseConnection.php');

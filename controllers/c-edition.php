@@ -1,9 +1,11 @@
 <?php
+// Démarrer la session
 session_start();
+// Inclusion des fonctions du modèle
 include_once('../models/DatabaseConnection.php');
 include_once('../models/setArticles.php');
 
-// faire la vérification de la session qui est remplit sinon redirection vers la page d'accueil
+// Faire la vérification de la session qui est remplit sinon redirection vers la page d'accueil
 if(!empty($_SESSION['isConnected']))
 {
 	//si le bouton valider est vrai
