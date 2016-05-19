@@ -19,8 +19,6 @@ if(!empty($_SESSION['isConnected']))
       //redirection sur la page d'accueil
       header('Location: c-index.php');
 		}
-		//Mettre un message ou un indicateur que l'un des deux champs ou les deux champs sont vides.
-		//Voir aussi pour que l'utilisateur ne perde pas forcément ce qui a été écrit si un des deux champs a été remplit.
 	}
 }
 else
