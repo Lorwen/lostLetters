@@ -16,5 +16,8 @@ $commentaries = recoverCommentary($results);
 // Comptage des comentaires
 $countage = counting($commentaries);
 
+// Afficher les commentaires
+
+
 // Affichage
 require ('../views/v-display.php');

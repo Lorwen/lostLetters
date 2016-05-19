@@ -7,14 +7,22 @@
   <!-- lien vers la page commentary.php -->
   <p><a href="c-commentary.php?id=<?php echo htmlentities($results['id'])?>">Pour commenter cliquer sur ce lien</a></p>
   <!--Si $countage est > à 0 alors afficher les commentaires -->
-  <?php if(!empty($countage<=0))
-  {
-    echo"Soit le premier à donner ton avis.";
-  }
-  else
-  {
-    $comments  = $commentaries->fetchAll(PDO::FETCH_ASSOC);
-  } ?>
+  <?php if(!empty($countage<=0)) :?>
+    <?php echo"Soit le premier à donner ton avis."; ?>
+  <?php else : ?>
+    <?php $comments  = $commentaries->fetchAll(PDO::FETCH_ASSOC); ?>
+    <h3>Commentaires</h3>
+      <!-- Sert a parcourir un tableau dans un tableau -->
+      <?php foreach ($comments as $key => $comments) : ?>
+        <div class="comment">
+          <div class="cadre">
+            <p class="writing"><?php echo '<strong>'.htmlspecialchars($comments['author']).'</strong> le '.nl2br($comments['date']); ?><br/>
+          </div>
+          <!-- Doit apparaitre dans un cadre fait avec les div -->
+          <?php echo nl2br(htmlspecialchars($comments['content'])); ?></p>
+        </div>
+      <?php endforeach; ?>
+    <?php endif; ?>
 </div><!--#contenu -->
 <?php  $contenu = ob_get_clean(); ?>
 

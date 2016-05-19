@@ -16,7 +16,6 @@ if(!empty($_POST['bouton']))
     $id = getId();
     // Fonction d'écriture dans la BDD
     $comments = setComments($id);
-    var_dump($comments);die;
     // Redirection sur la page d'accueil
     header('Location: c-index.php');
   }
