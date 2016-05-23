@@ -28,6 +28,9 @@
                 <input type="submit" class="btn btn-primary" name="bouton" value="Valider">
               </form>
             </li>
+            <li class="active">
+              <a href="../controllers/c-signin.php" onclick="showLoginForm(this)"class="hvr-shutter-out-vertical" >Registration <span class="sr-only">(current)</span></a>
+            </li>
           </ul>
           <?php else : ?>
           <ul class="nav navbar-nav">
