@@ -29,7 +29,7 @@
               </form>
             </li>
             <li class="active">
-              <a href="../controllers/c-signin.php" onclick="showLoginForm(this)"class="hvr-shutter-out-vertical" >Registration <span class="sr-only">(current)</span></a>
+              <a href="../controllers/c-signin.php" onclick="showLoginForm(this)"class="hvr-shutter-out-vertical"> Registration <span class="sr-only">(current)</span></a>
             </li>
           </ul>
           <?php else : ?>

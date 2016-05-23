@@ -3,6 +3,7 @@
 session_start();
 // Inclusion des fonctions du modèle
 include_once('../models/DatabaseConnection.php');
+include_once('../models/setRegister.php');
 
 // Vérification que tous les champs obligatoires sont remplis
 if(!empty($_POST['bouton']))
@@ -13,7 +14,7 @@ if(!empty($_POST['bouton']))
     if($_POST['password'] == $_POST['vérification'])
     {
       // Ecriture dans la BDD
-        $register = setRegister();
+        $req = setRegister();
       // Redirection vers la page d'accueil
         header('Location: c-index.php');
     }
@@ -47,7 +48,6 @@ if(!empty($_POST['bouton']))
     $error = 'Le champ \'mot de passe\' doit être obligatoirement remplit une seconde fois';
   }
 }
-
 
 // Affichage
 require ('../views/v-signin.php');

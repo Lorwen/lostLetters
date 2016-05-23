@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
   <div id="contenu">
-    <form class="form-horizontal">
+    <form class="form-horizontal" method="post" action="">
       <div class="form-group">
         <label for="inputNickName" class="col-sm-2 control-label">Pseudonyme</label>
         <div class="col-sm-10">
@@ -29,7 +29,7 @@
       </div>
       <div class="form-group">
         <div class="col-sm-offset-2 col-sm-10">
-          <button type="submit" class="btn btn-default">Sign in</button>
+          <input type="submit" name="bouton" class="btn btn-default" value="Valider">
         </div>
       </div>
     </form>
