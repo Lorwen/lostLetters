@@ -35,16 +35,15 @@
 			</div>
 		</article>
 		<aside class="col-sm-4">
-			<p>coucou</br>
-				<h4>Les imperatifs:</h4> </br>
-				<ul>
-					<li>Le site doit pouvoir publier des articles sans avoir a coder en html, css, php, js ou jqueries. </li>
-					<li>La page d'accueil dont mettre ou minimum la liste des articles présents dans la BDD, voir un extrait de l'article, donner la possibilité de me connecter. </li>
-					<li>La page d'édition doit me présent une interface graphique me permettant de faire un article et de le publier.</li>
-					<li>Je dois avoir la possibilité de modifier mon article une fois publié.</li>
-				</ul>
-			</aside>
-		</section>
+			<?php if(!empty($_SESSION)) :?>
+				<p class="nickname"> Vous êtes connecté sur le pseudo : </p>
+				<h3 class="nickname"><?php echo $_SESSION['isConnected']['0']['username'];?></h3>
+			<?php else :?>
+				<p class="nickname"> Vous êtes connecté en tant que visiteur</p>
+			<?php endif; ?>
+
+		</aside>
+	</section>
 		<div class="clear" style="clear:both"></div>
 		<?php include("../includes/footer.php"); ?>
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>

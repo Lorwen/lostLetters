@@ -15,10 +15,10 @@
 								<?php $preview = substr($article['content'],0,1000);?>
 								<?php echo nl2br($preview); ?>
 								<div class="link_article">
-									<a href="c-display.php?title=<?php echo htmlentities($article['title'])?>&id=<?php echo htmlentities($article['id'])?>">Lire la suite de l'article >></a>
+									<a href="c-display.php?title=<?php echo htmlentities($article['title'])?>&id=<?php echo htmlentities($article['id'])?>">Lire la suite >></a>
 								</div>
 							</div>
-						<?php	if(!empty($_SESSION['isConnected'])) : ?>
+						<?php	if(!empty($_SESSION['isConnected'])AND $_SESSION['isConnected']['0']['admin'] == 1) : ?>
 							<!-- Affiche l'icone de modification -->
 							<a href="c-modify.php?id=<?php echo htmlentities($article['id'])?>" title="Modification"><span class="glyphicon glyphicon-refresh" /span></a>
 							<!-- Affiche l'icone de suppression -->

@@ -11,9 +11,10 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <!-- Si on n'est pas connecter -->
           <?php if(empty($_SESSION['isConnected'])) :?>
           <ul class="nav navbar-nav">
-            <!--barre de navigation avec les classes bs-->
+            <!--barre de navigation du login -->
             <li class="active">
               <a href="#" onclick="showLoginForm(this)"class="hvr-shutter-out-vertical" >Login <span class="sr-only">(current)</span></a>
               <form id="signin" class="navbar-form navbar-right" role="form" method="post" action="">
@@ -32,11 +33,15 @@
               <a href="../controllers/c-signin.php" onclick="showLoginForm(this)"class="hvr-shutter-out-vertical"> Registration <span class="sr-only">(current)</span></a>
             </li>
           </ul>
-          <?php else : ?>
+        <?php elseif(!empty($_SESSION['isConnected']) AND $_SESSION['isConnected']['0']['admin'] == 0) : ?>
           <ul class="nav navbar-nav">
-            <li class="active"><a href="c-edition.php" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
             <li class="active"><a href="logout.php"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
           </ul>
+        <?php else : ?>
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="c-edition.php" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="logout.php"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
+        </ul>
           <?php endif; ?>
           <form class="navbar-form navbar-right" role="search">
             <div class="form-group">

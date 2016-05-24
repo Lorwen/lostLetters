@@ -8,13 +8,14 @@ include_once('../models/setRegister.php');
 // Vérification que tous les champs obligatoires sont remplis
 if(!empty($_POST['bouton']))
 {
-  if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['vérification']))
+  if(!empty($_POST['pseudo']) && !empty($_POST['email']) && !empty($_POST['password']) && !empty($_POST['verification']))
   {
     // Vérification que les deux champs mot de passe sont identiques
-    if($_POST['password'] == $_POST['vérification'])
+    if($_POST['password'] == $_POST['verification'])
     {
       // Ecriture dans la BDD
-        $req = setRegister();
+        $register = setRegister();
+
       // Redirection vers la page d'accueil
         header('Location: c-index.php');
     }
@@ -42,7 +43,7 @@ if(!empty($_POST['bouton']))
     $error = 'Le champ \'mot de passe\' doit être obligatoirement remplit';
   }
   // Champs vérification vide
-  else if(empty($_POST['vérification']))
+  else if(empty($_POST['verification']))
   {
     // Message d'erreur
     $error = 'Le champ \'mot de passe\' doit être obligatoirement remplit une seconde fois';

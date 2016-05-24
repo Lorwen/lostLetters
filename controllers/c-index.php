@@ -7,7 +7,7 @@ include_once('../models/getArticles.php');
 
 // Inclusion du menu de navigation
 include_once('c-nav.php');
-    //var_dump($_SESSION)
+
 // Sélectionner les articles
 $articles = getArticles();
 

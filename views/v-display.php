@@ -5,7 +5,11 @@
   <?php echo '<h2>'.htmlspecialchars($results['title']).'</h2>'; ?>
   <?php echo nl2br($results['content']); ?><br/><br/>
   <!-- lien vers la page commentary.php -->
+  <?php if(!empty($_SESSION['isConnected'])) :?>
   <p><a href="c-commentary.php?id=<?php echo htmlentities($results['id'])?>">Pour commenter cliquer sur ce lien</a></p>
+<?php else : ?>
+  <p><strong>Il faut être connecté sur son compte pour pouvoir faire des commentaires.</strong></p>
+<?php endif; ?>
   <!--Si $countage est > à 0 alors afficher les commentaires -->
   <?php if(!empty($countage<=0)) :?>
     <?php echo"Soit le premier à donner ton avis."; ?>

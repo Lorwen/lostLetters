@@ -1,4 +1,4 @@
-<?php $title = 'Espace lecture'; ?>
+<?php $title = 'Espace communication'; ?>
 
 <?php ob_start(); ?>
 <div id="contenu">
@@ -13,10 +13,8 @@
   <?php endif; ?>
   <form method="post" action="">
     <fieldset>
-      <legend>Commentaire</legend>
-      <p>	<label for="pseudo">Pseudonyme : </label>
-        <input type="text" name="pseudo" id="pseudo" onblur="verifPseudo(this)"/>
-        <p>
+      <legend>Interaction</legend>
+
           <label for="text_comment">Commentaire</label>
           <br />
           <textarea name="text_comment" id="text_comment" rows="5" cols="125" required="required"></textarea>

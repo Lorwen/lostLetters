@@ -22,9 +22,9 @@
         </div>
       </div>
       <div class="form-group">
-        <label for="inputVérification" class="col-sm-2 control-label">Vérification</label>
+        <label for="inputVerification" class="col-sm-2 control-label">Vérification</label>
         <div class="col-sm-10">
-          <input type="password" class="form-control" id="inputVérification" name="vérification" placeholder="Vérification">
+          <input type="password" class="form-control" id="inputVerification" name="verification" placeholder="Vérification">
         </div>
       </div>
       <div class="form-group">

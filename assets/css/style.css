@@ -115,6 +115,11 @@ aside:nth-child(1)
 	background: #858c99;
 
 }
+.nickname
+{
+	text-align: center;
+	text-decoration: underline;
+}
 article:nth-child(2)
 {
 	order:1;

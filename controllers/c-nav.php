@@ -13,13 +13,14 @@ if(!empty($_POST['bouton']))
   {
     // Appelle de la fonction de comparaison
     $comparaison = comparaisonChampsFormulaire();
-    // Si les données issues de la BDD sont identiques à ceux du formulaire
-    $results = $comparaison->fetch(PDO::FETCH_ASSOC);
+
+    // Si les données issues de la BDD sont identiques à celles du formulaire
+  //  $results = $comparaison->fetch(PDO::FETCH_ASSOC);
     // Comparaison des données BDD avec les entrées du formulaire de connexion
-    if($results['username']==$_POST['pseudo'] && $results['password']==$_POST['password'])
+    if($comparaison['0']['username'] == $_POST['pseudo'] && $comparaison['0']['password'] == sha1($_POST['password']))
     {
       // Mettre les informations dans la session
-      $_SESSION['isConnected'] = $results;
+      $_SESSION['isConnected'] = $comparaison;
     }
   }
 }
