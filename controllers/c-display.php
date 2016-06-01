@@ -6,7 +6,6 @@ include_once('../models/DatabaseConnection.php');
 include_once('../models/recoverArticles.php');
 include_once('../models/counting.php');
 include_once('../models/recoverCommentary.php');
-
 // Afficher l'article modifier ou sélectionné
 $results = recoverArticles();
 

@@ -15,7 +15,7 @@
 								<?php $preview = substr($article['content'],0,1000);?>
 								<?php echo nl2br($preview); ?>
 								<div class="link_article">
-									<a href="c-display.php?title=<?php echo htmlentities($article['title'])?>&id=<?php echo htmlentities($article['id'])?>">Lire la suite >></a>
+									<a href="c-display.php?title=<?php echo htmlentities($article['title'])?>">Lire la suite >></a>
 								</div>
 							</div>
 						<?php	if(!empty($_SESSION['isConnected'])AND $_SESSION['isConnected']['0']['admin'] == 1) : ?>
