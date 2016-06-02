@@ -6,7 +6,7 @@
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
             <span class="sr-only">Toggle navigation</span>
           </button>
-          <a class="navbar-brand hvr-shutter-out-vertical" href="c-index.php"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+          <a class="navbar-brand hvr-shutter-out-vertical" href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
         </div>
 
         <!-- Collect the nav links, forms, and other content for toggling -->

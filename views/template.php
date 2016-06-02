@@ -4,10 +4,11 @@
 	<!-- meta tag  -->
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link href="../assets/css/bootstrap.min.css"rel="stylesheet">
-	<link  href="../assets/css/style.css" rel="stylesheet">
-	<link href="../assets/css/hover.min.css" rel="stylesheet" media="all">
-	<link href="../assets/css/hover.css" rel="stylesheet" media="all">
+
+	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
+	<link  href="/assets/css/style.css" rel="stylesheet">
+	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
+	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
 
 	<title>Les lettres perdues</title>
 </head>
