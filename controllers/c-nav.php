@@ -15,12 +15,25 @@ if(!empty($_POST['bouton']))
     $comparaison = comparaisonChampsFormulaire();
 
     // Si les données issues de la BDD sont identiques à celles du formulaire
-  //  $results = $comparaison->fetch(PDO::FETCH_ASSOC);
-    // Comparaison des données BDD avec les entrées du formulaire de connexion
-    if($comparaison['0']['username'] == $_POST['pseudo'] && $comparaison['0']['password'] == sha1($_POST['password']))
+    //  $results = $comparaison->fetch(PDO::FETCH_ASSOC);
+    if(!empty($comparaison))
     {
-      // Mettre les informations dans la session
-      $_SESSION['isConnected'] = $comparaison;
+      // Comparaison des données BDD avec les entrées du formulaire de connexion
+      if($comparaison['0']['username'] == $_POST['pseudo'] && $comparaison['0']['password'] == sha1($_POST['password']))
+      {
+        // Mettre les informations dans la session
+        $_SESSION['isConnected'] = $comparaison;
+      }
+      else {
+        //gestion des erreurs
+        echo ("Login incorrect. Veuillez recommencer.");
+      }
     }
+  }
+  if(empty($_POST['pseudo'])){
+    $error="Le champ pseudo doit être obligatoirement remplit.";
+  }
+  else if (empty($_POST['password'])){
+    $error="Le champ mot de passe doit être obligatoirement remplit";
   }
 }
