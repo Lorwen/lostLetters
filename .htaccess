@@ -1,0 +1,12 @@
+# AuthUserFile C:/wamp/www/lostLetters/.htpasswd
+# AuthName "Acc�s prot�g�"
+# AuthType Basic
+# Require valid-user
+
+# Options +FollowSymlinks -> semble poser probl�me � apache (optional)
+RewriteEngine On
+# Ne pas mettre le nom de domaine dans la seconde partie
+RewriteRule ^index.html$ controllers/c-index.php [L]
+RewriteRule ^article/detail/([0-9]+)$ controllers/c-display.php?id=$1 [L]
+RewriteRule ^signin.html$ controllers/c-signin.php [L]
+RewriteRule ^logout.html$ controllers/logout.php [L]

@@ -42,6 +42,12 @@
 			<?php else :?>
 				<p class="nickname"> Vous êtes connecté en tant que visiteur</p>
 			<?php endif; ?>
+			<?php //$_POST['search']='toto';?>
+
+			<?php if(isset($_POST['search'])) :?>
+				<p><strong>Résultat(s) de la recherche : </strong></p>
+				<?php var_dump($_POST['search']); ?>
+			<?php endif; ?>
 
 		</aside>
 	</section>

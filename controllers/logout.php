@@ -4,5 +4,5 @@
   session_unset();
   session_destroy();
   // Redirection à la page d'Accueil
-  header('Location: c-index.php');
+  header('Location: /index.html');
  ?>
