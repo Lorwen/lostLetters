@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
   <div id="contenu">
-
+        
 				<h2>Articles récents </h2>
 					<!-- parcours des résultats -->
 				<ul>

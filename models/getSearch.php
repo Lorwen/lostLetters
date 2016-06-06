@@ -7,7 +7,7 @@
    // include('includes/secured_form');
    // Requête pour récupérer le résultat de la recherche
    $mot_cle="Personnages";
-   $query=$dbh->prepare("SELECT * FROM article WHERE mot LIKE ?");
+   $query=$dbh->prepare("SELECT * FROM article WHERE title LIKE ?");
    $result = $query->execute(array("%".$mot_cle."%"));
    return $result;
  }
