@@ -2,7 +2,7 @@
 // Inclusion des fonctions du modèle
 include_once('../models/DatabaseConnection.php');
 include_once('../models/comparaisonChampsFormulaire.php');
-include_once('../models/getSearch.php');
+
 
 /*----- LOGIN -----*/
 
@@ -38,10 +38,4 @@ if(!empty($_POST['bouton']))
     $error="Le champ mot de passe doit être obligatoirement remplit";
   }
 }
-
-// Barre de recherche et vérification que le champs de recherche est dûment remplit
-if(!empty($_POST['bouton2'])&&(!empty($_POST['search']))){
-  // Appelle de la fonction de recherche
-  $search = getSearch();
-  // var_dump($search);die;
-}
+include_once('c-research.php');
