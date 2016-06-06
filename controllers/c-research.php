@@ -7,7 +7,9 @@ if(!empty($_POST['bouton2']))
 {
   if(!empty($_POST['search']))
   {
+    var_dump($_POST);
     // Appeller la fonction getSearch
     $search = getSearch();
+    var_dump($search);
   }
 }

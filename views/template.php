@@ -43,10 +43,11 @@
 				<p class="nickname"> Vous êtes connecté en tant que visiteur</p>
 			<?php endif; ?>
 			<!-- affichage du/des résultat(s) -->
-			<?php if(isset($result))
-			{
-				echo($result);
-			} ?>
+			<?php if(isset($search)): ?>
+
+				<p><strong>Résultat(s) de la recherche : </strong></p>
+				<?php echo($search['0']['title']); ?>
+			<?php endif;?>
 
 			<?php //if(isset($_POST['search'])) :?>
 				<!--<p><strong>Résultat(s) de la recherche : </strong></p> -->
