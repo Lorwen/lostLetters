@@ -2,7 +2,7 @@
 
 <?php ob_start(); ?>
   <div id="contenu">
-        
+
 				<h2>Articles récents </h2>
 					<!-- parcours des résultats -->
 				<ul>
@@ -20,9 +20,9 @@
 							</div>
 						<?php	if(!empty($_SESSION['isConnected'])AND $_SESSION['isConnected']['0']['admin'] == 1) : ?>
 							<!-- Affiche l'icone de modification -->
-							<a href="c-modify.php?id=<?php echo htmlentities($article['id'])?>" title="Modification"><span class="glyphicon glyphicon-refresh" /span></a>
+							<a href="/controllers/c-modify.php?id=<?php echo htmlentities($article['id'])?>" title="Modification"><span class="glyphicon glyphicon-refresh" /span></a>
 							<!-- Affiche l'icone de suppression -->
-							<a href="delete.php?id=<?php echo htmlentities($article['id'])?>" title="Suppression"><span class="glyphicon glyphicon-trash" /span></a>
+							<a href="/controllers/delete.php?id=<?php echo htmlentities($article['id'])?>" title="Suppression"><span class="glyphicon glyphicon-trash" /span></a>
 							<?php endif; ?>
 						</li>
           <?php endforeach; ?>

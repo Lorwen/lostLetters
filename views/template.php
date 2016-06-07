@@ -2,20 +2,22 @@
 <html>
 <head>
 	<!-- meta tag  -->
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-Type" content="text/html;" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
 	<link  href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
 	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
+	<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script>tinymce.init({ selector:'textarea' });</script> -->
 
 	<title>Les lettres perdues</title>
 </head>
 <body>
 	<header>
 		<div class="page-header">
-			<h1>Les lettres perdues <br/><small><?= $title ?></small></h1><!-- Ca équivaut à un echo de $title -->
+			<h1>Les lettres perdues <br/><small><?= $title ?></small></h1><!-- Ca ��quivaut �� un echo de $title -->
 		</div>
 		<!-- Remplacer l'include nav.php par v-nav.php -->
 		<?php include("v-nav.php");?>
@@ -43,16 +45,18 @@
 				<p class="nickname"> Vous êtes connecté en tant que visiteur</p>
 			<?php endif; ?>
 			<!-- affichage du/des résultat(s) -->
-			<?php if(isset($search)): ?>
+			<?php if(isset($_POST['bouton2'])): ?>
+				<?php if(!empty($search)): ?>
+					<p><strong>Résultat(s) de la recherche : </strong></p>
+					<a href="/controllers/c-display.php?id=<?php echo htmlentities($search['0']['id'])?>" ><?php echo($search['0']['title']); ?></a>
 
-				<p><strong>Résultat(s) de la recherche : </strong></p>
-				<?php echo($search['0']['title']); ?>
+					<!-- Possibilité de non résultat -->
+				<?php else :?>
+					<p><strong>Résultat(s) de la recherche : </strong></p>
+					<?php echo("Aucun résultat ne correspond à votre recherche"); ?>
+				<?php endif;?>
 			<?php endif;?>
 
-			<?php //if(isset($_POST['search'])) :?>
-				<!--<p><strong>Résultat(s) de la recherche : </strong></p> -->
-				<?php //var_dump($_POST['search']); ?>
-			<?php //endif; ?>
 
 		</aside>
 	</section>

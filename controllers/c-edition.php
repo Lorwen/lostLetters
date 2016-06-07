@@ -14,17 +14,19 @@ if(!empty($_SESSION['isConnected']))
 		//si les champs sont remplient
 		if(!empty($_POST['title']) && !empty($_POST['text_article']))
 		{
-      // Appelle de la fonction setArticles
+      // Appel de la fonction setArticles
       $printed = setArticles();
-      //redirection sur la page d'accueil
-      header('Location: c-index.php');
+			var_dump($_POST['text_article']);
+			var_dump($printed);
+      // Redirection sur la page d'accueil
+      header('Location: /controllers/c-index.php');
 		}
 	}
 }
 else
 {
 	session_destroy();
-	$_error="Une erreur est survenue, veuillez vous reconnecter.";//voir comment je le passe sur index.php
+	$_error="Une erreur est survenue, veuillez vous reconnecter.";// Voir comment je le passe sur index.php
 	header('Location: /');
 }
 

@@ -6,6 +6,11 @@ include_once('../models/DatabaseConnection.php');
 include_once('../models/recoverArticles.php');
 include_once('../models/counting.php');
 include_once('../models/recoverCommentary.php');
+include_once('../models/getArticles.php');
+
+// Inclusion du menu de navigation
+include_once('c-nav.php');
+
 // Afficher l'article modifier ou sélectionné
 $results = recoverArticles();
 
