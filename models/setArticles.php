@@ -10,5 +10,4 @@
     $printed ->execute(array( $_SESSION['isConnected']['0']['id'], $_POST['title'], $_POST['text_article']));
 
     return $printed;
-    var_dump($printed);die;
   }

@@ -9,8 +9,12 @@
 	<link  href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
 	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
-	<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
-	<script>tinymce.init({ selector:'textarea' });</script>
+	<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
+	<script>
+	tinymce.init({
+		selector:'textarea' 
+	});
+	</script>
 
 	<title>Les lettres perdues</title>
 </head>

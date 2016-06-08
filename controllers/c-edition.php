@@ -13,15 +13,16 @@ if(!empty($_SESSION['isConnected']))
 	//si le bouton valider est vrai
 	if(!empty($_POST['bouton']))
 	{
-		var_dump($_POST);
 		//si les champs sont remplient
 		if(!empty($_POST['title']) && !empty($_POST['text_article']))
 		{
-			var_dump($_POST);
+			//var_dump($_POST);
       // Appel de la fonction setArticles
       $printed = setArticles();
+			var_dump($_POST);
+			var_dump($printed);
       // Redirection sur la page d'accueil
-    //  header('Location: /controllers/c-index.php');
+    //header('Location: /controllers/c-index.php');
 		}
 		else
 		{
