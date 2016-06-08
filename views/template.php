@@ -9,15 +9,15 @@
 	<link  href="/assets/css/style.css" rel="stylesheet">
 	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
 	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
-	<!--<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
-	<script>tinymce.init({ selector:'textarea' });</script> -->
+	<script src='//cdn.tinymce.com/4/tinymce.min.js'></script>
+	<script>tinymce.init({ selector:'textarea' });</script>
 
 	<title>Les lettres perdues</title>
 </head>
 <body>
 	<header>
 		<div class="page-header">
-			<h1>Les lettres perdues <br/><small><?= $title ?></small></h1><!-- Ca ��quivaut �� un echo de $title -->
+			<h1>Les lettres perdues <br/><small><?= $title ?></small></h1><!-- Ca équivaut à un echo de $title -->
 		</div>
 		<!-- Remplacer l'include nav.php par v-nav.php -->
 		<?php include("v-nav.php");?>

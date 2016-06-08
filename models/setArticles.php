@@ -7,7 +7,8 @@
     include("../includes/secured_form.php");
     //requête d'écriture dans la BDD
     $printed = $dbh->prepare("INSERT INTO article(user_id, title, content) VALUES(?, ?, ?)");
-    $printed ->execute(array( $_SESSION['isConnected']['id'], $_POST['title'], $_POST['text_article']));
+    $printed ->execute(array( $_SESSION['isConnected']['0']['id'], $_POST['title'], $_POST['text_article']));
 
     return $printed;
+    var_dump($printed);die;
   }

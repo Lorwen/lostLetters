@@ -1,9 +1,9 @@
 # AuthUserFile C:/wamp/www/lostLetters/.htpasswd
-# AuthName "Acc�s prot�g�"
+# AuthName "Accès protégé"
 # AuthType Basic
 # Require valid-user
 
-# Options +FollowSymlinks -> semble poser probl�me � apache (optional)
+# Options +FollowSymlinks -> semble poser problème à apache (optional)
 RewriteEngine On
 # Ne pas mettre le nom de domaine dans la seconde partie
 RewriteRule ^index.html$ controllers/c-index.php [L]
