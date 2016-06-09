@@ -39,8 +39,8 @@
           </ul>
         <?php else : ?>
         <ul class="nav navbar-nav">
-          <li class="active"><a href="controllers/c-edition.php" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
-          <li class="active"><a href="logout.html"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="/edition.html" class="hvr-shutter-out-vertical">Edition <span class="sr-only">(current)</span></a></li>
+          <li class="active"><a href="/logout.html"class="hvr-shutter-out-vertical">Déconnexion <span class="sr-only">(current)</span></a></li>
         </ul>
           <?php endif; ?>
           <!-- Barre de recherche -->

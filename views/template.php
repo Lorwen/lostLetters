@@ -12,7 +12,7 @@
 	<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>
 	tinymce.init({
-		selector:'textarea' 
+		selector:'textarea';
 	});
 	</script>
 
@@ -52,7 +52,7 @@
 			<?php if(isset($_POST['bouton2'])): ?>
 				<?php if(!empty($search)): ?>
 					<p><strong>Résultat(s) de la recherche : </strong></p>
-					<a href="/controllers/c-display.php?id=<?php echo htmlentities($search['0']['id'])?>" ><?php echo($search['0']['title']); ?></a>
+					<a href="article/detail/<?php echo htmlentities($search['0']['id'])?>" ><?php echo($search['0']['title']); ?></a>
 
 					<!-- Possibilité de non résultat -->
 				<?php else :?>

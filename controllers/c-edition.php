@@ -8,8 +8,6 @@ include_once('../models/setArticles.php');
 // Faire la vérification de la session qui est remplit sinon redirection vers la page d'accueil
 if(!empty($_SESSION['isConnected']))
 {
-	var_dump($_SESSION);
-	var_dump($_POST);
 	//si le bouton valider est vrai
 	if(!empty($_POST['bouton']))
 	{
@@ -19,10 +17,10 @@ if(!empty($_SESSION['isConnected']))
 			//var_dump($_POST);
       // Appel de la fonction setArticles
       $printed = setArticles();
-			var_dump($_POST);
-			var_dump($printed);
+			//var_dump($_POST);
+			//var_dump($printed);
       // Redirection sur la page d'accueil
-    //header('Location: /controllers/c-index.php');
+    header('Location: /index.html');
 		}
 		else
 		{

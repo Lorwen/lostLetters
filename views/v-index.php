@@ -15,15 +15,15 @@
 								<?php $preview = substr($article['content'],0,1000);?>
 								<?php echo nl2br($preview); ?>
 								<div class="link_article">
-                	<a href="controllers/c-display.php?id=<?php echo htmlentities($article['id']) ?>">Lire la suite >></a>
+                	<a href="article/detail/<?php echo htmlentities($article['id']) ?>">Lire la suite >></a>
 								<!--<a href="article/detail/<?php //echo htmlentities($article['id'])?>">Lire la suite >></a>-->
 								</div>
 							</div>
 						<?php	if(!empty($_SESSION['isConnected'])AND $_SESSION['isConnected']['0']['admin'] == 1) : ?>
 							<!-- Affiche l'icone de modification -->
-							<a href="/controllers/c-modify.php?id=<?php echo htmlentities($article['id'])?>" title="Modification"><span class="glyphicon glyphicon-refresh" /span></a>
+							<a href="update/detail/<?php echo htmlentities($article['id'])?>" title="Modification"><span class="glyphicon glyphicon-refresh" /span></a>
 							<!-- Affiche l'icone de suppression -->
-							<a href="/controllers/delete.php?id=<?php echo htmlentities($article['id'])?>" title="Suppression"><span class="glyphicon glyphicon-trash" /span></a>
+							<a href="delete/detail/<?php echo htmlentities($article['id'])?>" title="Suppression"><span class="glyphicon glyphicon-trash" /span></a>
 							<?php endif; ?>
 						</li>
           <?php endforeach; ?>

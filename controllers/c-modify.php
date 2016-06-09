@@ -19,19 +19,19 @@ if(!empty($_SESSION['isConnected']))
     {
       $updates = updateArticles();
       // Redirection sur la page d'affichage de l'article complet
-      header('Location: ../controllers/c-display.php?id='.$_GET['id']);
+      header('Location: /article/detail/'.$_GET['id']);
     }
   }
   else
   {
-    header('Location: c-index.php');
+    header('Location: /index.html');
   }
 }
 else
 {
   session_destroy();
   $_error="Une erreur est survenue, veuillez vous reconnecter.";
-  header('Location: c-index.php');
+  header('Location: /index.html');
 }
 
 // Affichage

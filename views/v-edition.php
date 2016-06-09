@@ -1,3 +1,4 @@
+<?php //echo time(); ?><!-- Pour voir le temps(si il y aun rechargement de la page) -->
 <?php $title = 'Edition'; ?>
 
 <?php ob_start(); ?>
@@ -10,7 +11,7 @@
     			  <p>
     			    <label for="text_article">Article</label>
     			     <br />
-    			    <textarea name="text_article" id="text_article" rows="20" cols="125" required="required"></textarea>
+    			    <textarea name="text_article" id="text_article" rows="20" cols="125" ></textarea>
     			 </p>
     			</p>
     			    <input type="submit" class="btn btn-primary" name="bouton" value="Valider">

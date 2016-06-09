@@ -14,11 +14,11 @@ if(!empty($_SESSION['isConnected']))
     $suppression = deleteArticles();
   }
 	// retour à la page d'accueil
-	header('Location: index.html');
+	header('Location: /index.html');
 }
 else
  {
 	session_destroy();
 	$_error="Une erreur est survenue, veuillez vous reconnecter.";
-	header('Location: index.html');
+	header('Location: /index.html');
  }
