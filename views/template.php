@@ -10,12 +10,14 @@
 	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
 	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
 	<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
-	<script>
-	tinymce.init({
-		selector:'textarea';
-	});
-	</script>
+	<script>tinymce.init({
+		selector:'textarea'
 
+		// Pour enlever les balises <p> mis par tinymce
+		forced_root_block : false,
+		force_br_newlines : true,
+		force_p_newlines : false
+	});</script>
 	<title>Les lettres perdues</title>
 </head>
 <body>
