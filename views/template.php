@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- meta tag  -->
-	<meta http-equiv="Content-Type" content="text/html;" />
+	<meta http-equiv="Content-Type" charset="utf-8" content="text/html;" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
@@ -10,14 +10,16 @@
 	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
 	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
 	<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
-	<script>tinymce.init({
-		selector:'textarea'
+	<script>
+	tinymce.init({
+		selector:'textarea',
 
 		// Pour enlever les balises <p> mis par tinymce
-		forced_root_block : false,
-		force_br_newlines : true,
-		force_p_newlines : false
-	});</script>
+		mode: 'textareas',
+		valid_elements: 'em/i, strike,u,strong/b,div[align],br,#p[align],ol[type|compact],-li'
+
+	});
+	</script>
 	<title>Les lettres perdues</title>
 </head>
 <body>

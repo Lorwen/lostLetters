@@ -17,7 +17,7 @@ if(!empty($_POST['bouton']))
     // Fonction d'écriture dans la BDD
     $comments = setComments($id);
     // Redirection sur la page d'accueil
-    header('Location: c-index.php');
+    header('Location: /index.html');
   }
   // Si le champs "mot de passe" est vide
   else if (empty($_POST['text_comment']))

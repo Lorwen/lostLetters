@@ -6,7 +6,7 @@
   <?php echo nl2br($results['content']); ?><br/><br/>
   <!-- lien vers la page commentary.php -->
   <?php if(!empty($_SESSION['isConnected'])) :?>
-  <p><a href="c-commentary.php?id=<?php echo htmlentities($results['id'])?>">Pour commenter cliquer sur ce lien</a></p>
+  <p><a href="/commentaries/<?php echo htmlentities($results['id'])?>">Pour commenter cliquer sur ce lien</a></p>
 <?php else : ?>
   <p><strong>Il faut être connecté sur son compte pour pouvoir faire des commentaires.</strong></p>
 <?php endif; ?>
