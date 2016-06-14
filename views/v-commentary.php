@@ -17,7 +17,7 @@
 
           <label for="text_comment">Commentaire</label>
           <br />
-          <textarea name="text_comment" id="text_comment" rows="5" cols="125" required="required"></textarea>
+          <textarea name="text_comment" id="text_comment" rows="5" cols="125" ></textarea>
         </p>
       </p>
     </fieldset>

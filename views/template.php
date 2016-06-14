@@ -2,7 +2,8 @@
 <html>
 <head>
 	<!-- meta tag  -->
-	<meta http-equiv="Content-Type" charset="utf-8" content="text/html;" />
+	<meta http-equiv="Content-Type" content="text/html;" />
+	<!--<meta charset="UTF-8" /> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
@@ -15,9 +16,9 @@
 		selector:'textarea',
 
 		// Pour enlever les balises <p> mis par tinymce
-		mode: 'textareas',
-		valid_elements: 'em/i, strike,u,strong/b,div[align],br,#p[align],ol[type|compact],-li'
-
+		forced_root_block : false,
+		forced_br_newlines : true,
+		forced_p_newlines : false
 	});
 	</script>
 	<title>Les lettres perdues</title>
