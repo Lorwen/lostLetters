@@ -3,7 +3,7 @@
 <head>
 	<!-- meta tag  -->
 	<meta http-equiv="Content-Type" content="text/html;" />
-	<!--<meta charset="UTF-8" /> -->
+	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
@@ -18,7 +18,11 @@
 		// Pour enlever les balises <p> mis par tinymce
 		forced_root_block : false,
 		forced_br_newlines : true,
-		forced_p_newlines : false
+		forced_p_newlines : false,
+
+	 	// Pour avoir les caractères spéciaux enregistré correctement
+		entity_encoding:named,
+		entities:8212,mdash,8221,rdquo,233,eacute
 	});
 	</script>
 	<title>Les lettres perdues</title>

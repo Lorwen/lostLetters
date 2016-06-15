@@ -13,7 +13,7 @@
               <!-- Affiche les résumés -->
               <div class="preview">
 								<?php $preview = substr($article['content'],0,1000);?>
-								<?php echo nl2br(htmlspecialchars($preview)); ?>
+								<?php echo nl2br($preview); ?>
 								<div class="link_article">
                 	<a href="article/detail/<?php echo htmlentities($article['id']) ?>">Lire la suite >></a>
 								</div>
