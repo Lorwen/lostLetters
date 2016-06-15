@@ -13,9 +13,6 @@ if(!empty($_POST['bouton']))
   {
     // Appelle de la fonction de comparaison
     $comparaison = comparaisonChampsFormulaire();
-
-    // Si les données issues de la BDD sont identiques à celles du formulaire
-    //  $results = $comparaison->fetch(PDO::FETCH_ASSOC);
     if(!empty($comparaison))
     {
       // Comparaison des données BDD avec les entrées du formulaire de connexion

@@ -69,7 +69,6 @@
 				<?php endif;?>
 			<?php endif;?>
 
-
 		</aside>
 	</section>
 		<div class="clear" style="clear:both"></div>
