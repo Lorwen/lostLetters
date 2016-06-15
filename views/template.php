@@ -21,8 +21,7 @@
 		forced_p_newlines : false,
 
 	 	// Pour avoir les caractères spéciaux enregistré correctement
-		entity_encoding:named,
-		entities:8212,mdash,8221,rdquo,233,eacute
+		entity_encoding: "raw"
 	});
 	</script>
 	<title>Les lettres perdues</title>

@@ -14,16 +14,16 @@
   <?php if(!empty($countage<=0)) :?>
     <?php echo"Soit le premier à donner ton avis."; ?>
   <?php else : ?>
-    <?php $comments  = $commentaries->fetchAll(PDO::FETCH_ASSOC); ?>
+    <?php $comments  = $commentaries->fetchAll(); ?>
     <h3>Commentaires</h3>
       <!-- Sert a parcourir un tableau dans un tableau -->
       <?php foreach ($comments as $key => $comments) : ?>
         <div class="comment">
           <div class="cadre">
-            <p class="writing"><?php echo '<strong>'.htmlspecialchars($comments['author']).'</strong> le '.nl2br($comments['date']); ?><br/>
+            <p class="writing"><?php echo '<strong>'.$comments['author'].'</strong> le '.nl2br($comments['date']); ?><br/>
           </div>
           <!-- Doit apparaitre dans un cadre fait avec les div -->
-          <?php echo nl2br(htmlspecialchars($comments['content'])); ?></p>
+          <?php echo ($comments['content']); ?></p>
         </div>
       <?php endforeach; ?>
     <?php endif; ?>

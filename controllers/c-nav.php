@@ -3,7 +3,6 @@
 include_once('../models/DatabaseConnection.php');
 include_once('../models/comparaisonChampsFormulaire.php');
 
-
 /*----- LOGIN -----*/
 
 // Si l'utilisateur a validé le formulaire

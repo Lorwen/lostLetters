@@ -4,7 +4,7 @@
     // Connexion à la BDD
     $dbh = DatabaseConnection::getInstance();
     //htlmspecialchars et expressions régulières
-    include("../includes/secured_form.php");
+    //include("../includes/secured_form.php");
     //requête d'écriture dans la BDD
     $printed = $dbh->prepare("INSERT INTO article(user_id, title, content) VALUES(?, ?, ?)");
     $printed ->execute(array( $_SESSION['isConnected']['0']['id'], $_POST['title'], html_entity_decode($_POST['text_article'])));
