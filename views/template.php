@@ -5,11 +5,9 @@
 	<meta http-equiv="Content-Type" content="text/html;" />
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link href="/assets/css/hover.css" rel="stylesheet" media="all">
 	<link href="/assets/css/bootstrap.min.css"rel="stylesheet">
 	<link  href="/assets/css/style.css" rel="stylesheet">
-	<link href="/assets/css/hover.min.css" rel="stylesheet" media="all">
-	<link href="/assets/css/hover.css" rel="stylesheet" media="all">
 	<script src="https://cdn.tinymce.com/4/tinymce.min.js"></script>
 	<script>
 	tinymce.init({
@@ -60,7 +58,7 @@
 			<?php if(isset($_POST['bouton2'])): ?>
 				<?php if(!empty($search)): ?>
 					<p><strong>Résultat(s) de la recherche : </strong></p>
-					<a href="article/detail/<?php echo htmlentities($search['0']['id'])?>" ><?php echo($search['0']['title']); ?></a>
+					<a class="resultsOfResearch" href="/article/detail/<?php echo htmlentities($search['0']['id'])?>" ><?php echo($search['0']['title']); ?></a>
 
 					<!-- Possibilité de non résultat -->
 				<?php else :?>

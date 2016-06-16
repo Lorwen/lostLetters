@@ -24,6 +24,11 @@ nav form
 {
 	display: none;
 }
+.page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #defaff;
+}
 .preview
 {
 	margin: 15px;
@@ -75,7 +80,21 @@ ul li #preview
 }
 aside{
 	background: gray;
+	text-align: center;
 }
+aside a
+{
+	color: #990000;
+	text-decoration: none;
+	font-size: 1.2em;
+	font-weight: bold;
+}
+aside a:hover
+{
+	color: brown;
+	text-decoration: none;
+}
+
 section
 {
 	display: flex;
@@ -130,10 +149,13 @@ article:nth-child(2)
 }
 footer
 {
+	position:static;
+	bottom:0;
 	border: 2px #858c99 solid;
 	background: #defaff;
 	text-align: center;
 	height: 100%;
+	width: 110%;
 	box-shadow: 3px 3px 3px #858c99;
 	height: 3em;
 }
@@ -154,10 +176,4 @@ footer a
 		border-radius: 5px;
     background-color: #defaff;
     text-decoration: none;
-}
-aside a
-{
-	text-align: center;
-	text-decoration: none;
-	color: yellow;
 }
